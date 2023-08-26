@@ -4,7 +4,7 @@ import numpy as np
 import pickle as pk
 import streamlit as st
 
-loaded_model=pk.load(open('C:\ml model salary/trained_model.sav','rb'))
+loaded_model=pk.load(open('trained_model.sav','rb'))
 
 def salary_prediction(input_data):
     input_experience_array=np.asarray(input_data)
