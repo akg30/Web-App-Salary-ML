@@ -11,8 +11,8 @@ def salary_prediction(input_data):
     input_experience_array_new=input_experience_array.reshape(1,-1)
     experience_salary=loaded_model.predict(input_experience_array_new)
     import math
-    experience_salary_new='Monthly Salary With Experience {1} Is {0} Rupees'.format(math.floor(experience_salary),input_data)
-    annual_experience_salary='Annual Salary With Experience {1} Is {0} Rupees'.format(math.floor(12*experience_salary),input_data)
+    experience_salary_new='Monthly Salary With Experience {1} Years Is {0} Rupees'.format(math.floor(experience_salary),input_data)
+    annual_experience_salary='Annual Salary With Experience {1} Years {0} Rupees'.format(math.floor(12*experience_salary),input_data)
     return experience_salary_new,annual_experience_salary
 
 def main():
