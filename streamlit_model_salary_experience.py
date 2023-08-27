@@ -16,7 +16,7 @@ def salary_prediction(input_data):
     return experience_salary_new,annual_experience_salary
 
 def main():
-    st.title('Salary Prediction By Work Experience Using Machine Learning')
+    st.title('Salary Prediction Using Machine Learning')
     experience=st.number_input('Enter Work Experience')
     salary_with_experience=' '
     if st.button('Click Here To Get Expected Salary From Work Experience'):
