@@ -22,7 +22,7 @@ def main():
     if st.button('Click Here To Get Expected Salary From Work Experience'):
         salary_with_experience=salary_prediction(experience)
     st.success(salary_with_experience)
-    st.text('Data Analysis Done And Machine Learning Model Deployed By "Anubhav Kumar Gupta"')
+    st.subheader('Exploratory Data Analysis Done And Machine Learning Model Deployed By "Anubhav Kumar Gupta"')
 if __name__=='__main__':
     main()
 
